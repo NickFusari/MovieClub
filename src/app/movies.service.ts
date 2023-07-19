@@ -12,13 +12,14 @@ export class MoviesService {
 
   register(x: Signup){
 
+    x.logged = true;
     localStorage.setItem("User", JSON.stringify(x));
     this.router.navigate(["movies"]);
   }
 
   login(x:Login){
 
-    let tempValue = JSON.parse(localStorage.getItem("User") || "");
+    let tempValue: Signup = JSON.parse(localStorage.getItem("User") || "");
     if(tempValue.email == x.email && tempValue.password == x.password){
       tempValue.logged = true;
       localStorage.setItem("User", JSON.stringify(tempValue));

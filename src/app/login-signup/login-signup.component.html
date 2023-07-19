@@ -1,25 +1,26 @@
-<div class="wrapper">
-    <div class="main">  	
-        <input type="checkbox" id="chk" aria-hidden="true">
-    
-            <div class="login">
-                <form class="form">
-                    <label for="chk" aria-hidden="true">Log in</label>
-                    <input class="input" type="email" name="email" placeholder="Email" required="" [(ngModel)]="this.login.email">
-                    <input class="input" type="password" name="pswd" placeholder="Password" required="" [(ngModel)]="this.login.password">
-                    <button (click)="this.service.login(this.login)">Log in</button>
-                </form>
-            </div>
-    
-      <div class="register">
-                <form class="form">
-                    <label for="chk" aria-hidden="true">Register</label>
-                    <input class="input" type="text" name="txt" placeholder="Username" required="" [(ngModel)]="this.register.username">
-                    <input class="input" type="email" name="email" placeholder="Email" required="" [(ngModel)]="this.register.email">
-                    <input class="input" type="password" name="pswd" placeholder="Password" required="" [(ngModel)]="this.register.password">
-                    <button (click)="this.service.register(this.register)">Register</button>
-                </form>
-            </div>
+<div class="outer">
+    <div class="wrapper">
+        <div class="main">  	
+            <input type="checkbox" id="chk" aria-hidden="true">
+        
+                <div class="login">
+                    <form class="form">
+                        <label for="chk" aria-hidden="true">Log in</label>
+                        <input class="input" type="email" name="email" placeholder="Email" required="" [(ngModel)]="this.login.email">
+                        <input class="input" type="password" name="pswd" placeholder="Password" required="" [(ngModel)]="this.login.password">
+                        <button (click)="this.service.login(this.login)">Log in</button>
+                    </form>
+                </div>
+        
+        <div class="register">
+                    <form class="form">
+                        <label for="chk" aria-hidden="true">Register</label>
+                        <input class="input" type="text" name="txt" placeholder="Username" required="" [(ngModel)]="this.register.username">
+                        <input class="input" type="email" name="email" placeholder="Email" required="" [(ngModel)]="this.register.email">
+                        <input class="input" type="password" name="pswd" placeholder="Password" required="" [(ngModel)]="this.register.password">
+                        <button (click)="this.service.register(this.register)">Register</button>
+                    </form>
+                </div>
+        </div>
     </div>
 </div>
-

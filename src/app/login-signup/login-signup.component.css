@@ -1,9 +1,19 @@
+.outer{
+
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#050504, #f3742d);
+}
+
 .wrapper{
 
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: rgba(244, 237, 237, 0.288);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
 }
 
 .main {
