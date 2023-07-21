@@ -13,8 +13,5 @@ export class LoginSignupComponent {
   login: Login = new Login();
   register: Signup = new Signup();
 
-  constructor(public service: MoviesService){
-
-
-  }
+  constructor(public service: MoviesService){}
 }

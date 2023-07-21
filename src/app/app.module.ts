@@ -8,13 +8,15 @@ import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { MoviesComponent } from './movies/movies.component';
 import { CreatemovieComponent } from './createmovie/createmovie.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginSignupComponent,
     MoviesComponent,
-    CreatemovieComponent
+    CreatemovieComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
