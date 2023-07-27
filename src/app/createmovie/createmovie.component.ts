@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./createmovie.component.css']
 })
 export class CreatemovieComponent {
-
+  
+ value:number = 0; 
 }

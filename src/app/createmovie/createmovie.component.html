@@ -3,17 +3,29 @@
 </div>
 
 <div class="wrapper">
-    <div class="container">
-        <img src="../../assets/movieTicket.png" alt="ticket">
-        <h2>Add your Movie to the list!</h2>
-        <label for="">Title of the movie:</label>
-        <input type="text">
-        <label for="">Description:</label>
-        <textarea cols="30" rows="10"></textarea>
-        <label for="">Rating:</label>
-        <input type="range" min="1" max="10">
-        <label for="">Release Date:</label>
-        <input type="date">
-        <button type="button">Submit</button>
+    <div class="primer">
+        <div class="design1"></div>
+        <div class="design2"></div>
+        <div class="container">
+            <h2>Add your Movie to the list!</h2>
+            <div class="devide">
+                <div class="firstHalf">
+                    <label for="">Title of the movie:</label>
+                    <input type="text">
+                    <label for="">Image URL:</label>
+                    <input type="text">
+                    <label for="">Description:</label>
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+                <div class="secondHalf">
+                    <label for="">Rating: <p>{{this.value}}</p></label>
+                    <input type="range" min="1" max="10" [(ngModel)]="this.value">
+                    <label for="">Release Date:</label>
+                    <input type="number" min="1900" max="2099" step="1" value="2016" />
+                    <img src="../../assets/movieTicket.png" alt="ticket">
+                </div>
+            </div>
+            <button type="button">Submit</button>
+        </div>
     </div>
 </div>
