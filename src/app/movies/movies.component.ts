@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MoviesService } from '../movies.service';
 
 @Component({
   selector: 'app-movies',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class MoviesComponent {
 
+  constructor(service: MoviesService){
+
+    service.loadMovies();
+  }
 }

@@ -2,13 +2,21 @@ import { Injectable } from '@angular/core';
 import { Signup } from './signup';
 import { Router } from '@angular/router';
 import { Login } from './login';
+import { Movie } from './movie';
+import * as jsonData from "../assets/data.json";
 
 @Injectable({
   providedIn: 'root'
 })
-export class MoviesService {
+export class MoviesService{
 
-  constructor(private router: Router) { }
+  movieCollection: Array<Movie> = jsonData;
+
+  constructor(private router: Router) {
+
+    this.loadMovies();
+    console.log(this.movieCollection[0]);
+   }
 
   register(x: Signup){
 
@@ -25,5 +33,9 @@ export class MoviesService {
       localStorage.setItem("User", JSON.stringify(tempValue));
       this.router.navigate(["movies"]);
     }
+  }
+
+  loadMovies(){
+     console.log(this.movieCollection);
   }
 }
