@@ -1,0 +1,58 @@
+.container{
+
+    max-width: 1300px;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.searhWrapper{
+
+    background: linear-gradient(-95deg,#050504, #632f11);
+    margin: 4rem auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.search{
+    padding: 3rem 1rem;
+    width: 93%;
+    color: white;
+    margin: 0 auto;
+    background: rgba(244, 237, 237, 0.199);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+}
+.search>h2{
+
+    margin-bottom: 2rem;
+}
+
+.ratingselector{
+
+    display: inline;
+    color: rgb(168, 168, 168);
+}
+
+.search>input{
+    margin: 0 0 1.5rem 0;
+    width: 80%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    display: block;
+}
+
+input[type="range"]{
+
+    accent-color: #f3742d;
+}
+
+.movieList{
+
+    color: white;
+}

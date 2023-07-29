@@ -1,3 +1,21 @@
 <div>
     <app-navbar></app-navbar>
 </div>
+<div class="container">
+    <div class="searhWrapper">
+        <div class="search">
+            <h2>Search:</h2>
+            <label>Title:</label>
+            <input type="text" placeholder="Title">
+            <label>Rating: <p class="ratingselector">{{this.searchParams.rating}}</p></label>
+            <input type="range" min="1" max="10" step="1" [(ngModel)]="this.searchParams.rating">
+            <label>Release date:</label>
+            <input type="number" min="1900" max="2023" step="1" value="1900">
+        </div>
+    </div>
+    <div class="movieList">
+        <div class="movie" *ngFor="let x of this.service.movieCollection">
+            <h2>{{x.title}}</h2>
+        </div>
+    </div>
+</div>

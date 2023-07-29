@@ -10,12 +10,12 @@ import * as jsonData from "../assets/data.json";
 })
 export class MoviesService{
 
-  movieCollection: Array<Movie> = jsonData;
+  movieCollection: Array<Movie> = JSON.parse(JSON.stringify(jsonData)).default;
 
   constructor(private router: Router) {
 
     this.loadMovies();
-    console.log(this.movieCollection[0]);
+    console.log(this.movieCollection);
    }
 
   register(x: Signup){
@@ -36,6 +36,9 @@ export class MoviesService{
   }
 
   loadMovies(){
-     console.log(this.movieCollection);
+     if(localStorage.getItem("list") !== null){
+
+        this.movieCollection = JSON.parse(localStorage.getItem("list") || "");
+     }
   }
 }

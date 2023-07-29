@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MoviesService } from '../movies.service';
+import { Movie } from '../movie';
 
 @Component({
   selector: 'app-movies',
@@ -8,7 +9,10 @@ import { MoviesService } from '../movies.service';
 })
 export class MoviesComponent {
 
-  constructor(service: MoviesService){
+  searchParams: Movie = new Movie();
+  rating:number = 1;
+
+  constructor(public service: MoviesService){
 
     service.loadMovies();
   }
