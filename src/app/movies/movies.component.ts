@@ -20,7 +20,7 @@ export class MoviesComponent {
 
   search(){
 
-    this.searchedList = this.service.movieCollection.filter(x => x.title.toLowerCase().includes(this.searchParams.title.toLocaleLowerCase()) && x.rating >= this.searchParams.rating && x.release > this.searchParams.release);
+    this.searchedList = this.service.movieCollection.filter(x => x.title.toLowerCase().includes(this.searchParams.title.toLowerCase()) && x.rating >= this.searchParams.rating && x.release > this.searchParams.release);
   }
 
   reset(){
