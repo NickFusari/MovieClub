@@ -10,10 +10,21 @@ import { Movie } from '../movie';
 export class MoviesComponent {
 
   searchParams: Movie = new Movie();
-  rating:number = 1;
+  searchedList:Array<Movie> = this.service.movieCollection;
 
   constructor(public service: MoviesService){
 
     service.loadMovies();
+  }
+
+
+  search(){
+
+    this.searchedList = this.service.movieCollection.filter(x => x.title.toLowerCase().includes(this.searchParams.title.toLocaleLowerCase()) && x.rating >= this.searchParams.rating && x.release > this.searchParams.release);
+  }
+
+  reset(){
+
+    this.searchedList = this.service.movieCollection;
   }
 }
