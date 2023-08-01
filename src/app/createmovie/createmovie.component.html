@@ -11,21 +11,21 @@
             <div class="devide">
                 <div class="firstHalf">
                     <label for="">Title of the movie:</label>
-                    <input type="text">
+                    <input type="text" [(ngModel)]="this.actual.title">
                     <label for="">Image URL:</label>
-                    <input type="text">
+                    <input type="text" [(ngModel)]="this.actual.url">
                     <label for="">Description:</label>
-                    <textarea cols="30" rows="10"></textarea>
+                    <textarea cols="30" rows="10" [(ngModel)]="this.actual.description"></textarea>
                 </div>
                 <div class="secondHalf">
                     <label for="">Rating: <p>{{this.value}}</p></label>
-                    <input type="range" min="1" max="10" [(ngModel)]="this.value">
+                    <input type="range" min="1" max="10" [(ngModel)]="this.value" [(ngModel)]="this.actual.rating">
                     <label for="">Release Date:</label>
-                    <input type="number" min="1900" max="2099" step="1" value="2016" />
+                    <input type="number" min="1900" max="2099" step="1" value="2016" [(ngModel)]="this.actual.release"/>
                     <img src="../../assets/movieTicket.png" alt="ticket">
                 </div>
             </div>
-            <button type="button">Submit</button>
+            <button type="button" (click)="this.submit(this.actual)">Submit</button>
         </div>
     </div>
 </div>

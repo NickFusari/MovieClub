@@ -16,7 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     LoginSignupComponent,
     MoviesComponent,
     CreatemovieComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

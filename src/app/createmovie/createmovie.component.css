@@ -1,5 +1,5 @@
 .wrapper{
-    overflow: hidden;
+    overflow-x: hidden;
     height: 100vh;
 }
 
@@ -61,7 +61,6 @@ p{
 .secondHalf{
 
     float: right;
-    overflow: hidden;
     width: 380px;
 }
 

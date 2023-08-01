@@ -2,8 +2,6 @@
 
     max-width: 1300px;
     padding-top: 5rem;
-    display: grid;
-    grid-template-columns: 30% 70%;
     justify-items: center;
     margin: 0 auto;
 }
@@ -15,6 +13,10 @@
     width: 100%;
     overflow: hidden;
     border-radius: 8px;
+    height: 440px;
+    width: 400px;
+    position: fixed;
+    float: left;
 }
 
 .search{
@@ -52,11 +54,6 @@ input[type="range"]{
     accent-color: #f3742d;
 }
 
-.movieList{
-
-    color: white;
-}
-
 button {
 
     width: 5rem;
@@ -75,3 +72,68 @@ button {
 button:hover {
     background-color: #da6725;
   }
+
+  .movieList{
+
+    color: white;
+    width: 65%;
+    float: right;
+}
+
+  .movieWrapper{
+
+    width: 100%;
+    position: relative;
+    margin: 4rem 0;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .movieWrapper>img{
+
+    width:100%;
+    border-radius: 8px;
+  }
+
+  .movie{
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(-90deg, black 20%, rgba(0, 0, 0, 0.616) 50%, rgba(0, 0, 0, 0));
+    height: 90%;
+    border-radius: 8px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  p{
+
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
+  .movie>h2{
+
+    font-size: 2rem;
+  }
+
+  .rating{
+
+    display: block;
+  }
+
+  .ratingNumber{
+
+    color: #f3742d;
+  }
+
+  .release{
+
+    color: rgb(95, 95, 95);
+  }
+

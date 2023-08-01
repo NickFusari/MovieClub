@@ -15,6 +15,7 @@ export class MoviesComponent {
   constructor(public service: MoviesService){
 
     service.loadMovies();
+    service.isLogged();
   }
 
 

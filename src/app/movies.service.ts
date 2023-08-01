@@ -15,7 +15,6 @@ export class MoviesService{
   constructor(private router: Router) {
 
     this.loadMovies();
-    console.log(this.movieCollection);
    }
 
   register(x: Signup){
@@ -32,6 +31,23 @@ export class MoviesService{
       tempValue.logged = true;
       localStorage.setItem("User", JSON.stringify(tempValue));
       this.router.navigate(["movies"]);
+    }
+  }
+
+  logout(){
+
+    let tempValue: Signup = JSON.parse(localStorage.getItem("User") || "");
+    tempValue.logged = false;
+    localStorage.setItem("User", JSON.stringify(tempValue));
+    this.router.navigate(["auth"]);
+  }
+
+  isLogged(){
+
+    let tempValue: Signup = JSON.parse(localStorage.getItem("User") || "");
+    if(tempValue.logged !== true){
+
+      this.router.navigate(["auth"]);
     }
   }
 

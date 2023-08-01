@@ -16,8 +16,13 @@
         </div>
     </div>
     <div class="movieList">
-        <div class="movie" *ngFor="let x of this.searchedList">
-            <h2>{{x.title}}</h2>
+        <div class="movieWrapper" *ngFor="let x of this.searchedList">
+            <img src={{x.url}} alt="poster">
+            <div class="movie">
+                <h2>{{x.title}} <span class="rating"><span class="ratingNumber">{{x.rating}}</span> / 10</span></h2>
+                <p>Description: {{x.description}}</p>
+                <p class="release">Release Date: {{x.release}}</p>
+            </div>
         </div>
     </div>
 </div>
