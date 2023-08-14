@@ -137,3 +137,27 @@ button:hover {
     color: rgb(95, 95, 95);
   }
 
+@media screen and (max-width: 1200px){
+
+  .searhWrapper, .movieList{
+
+    float: none;
+  }
+
+  .searhWrapper{
+
+    position: static;
+    width: 90%;
+  }
+
+  .search{
+
+    width: 100%;
+  }
+
+  .movieList{
+
+    margin: 0 auto;
+    width: 90%;
+  }
+}

@@ -10,6 +10,8 @@ import { CreatemovieComponent } from './createmovie/createmovie.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppRoutingModule,
     RouterModule,
     FormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
