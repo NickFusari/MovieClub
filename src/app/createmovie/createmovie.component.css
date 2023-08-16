@@ -132,3 +132,12 @@ button:hover{
     bottom: -150px;
     right: -330px;
 }
+
+@media screen and (max-width: 1200px){
+
+    .firstHalf, .secondHalf{
+
+        float: none;
+        margin: 0 auto;
+    }
+}

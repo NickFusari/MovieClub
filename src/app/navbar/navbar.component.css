@@ -35,6 +35,11 @@ a:hover{
     display: none;
 }
 
+#menu{
+
+    display: none;
+}
+
 @media screen and (max-width: 1200px){
 
 
@@ -48,11 +53,6 @@ a:hover{
         cursor: pointer;
         position: relative;
         z-index: 15;
-    }
-
-    #menu{
-
-        display: none;
     }
 
     .links{

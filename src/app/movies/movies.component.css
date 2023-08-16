@@ -161,3 +161,56 @@ button:hover {
     width: 90%;
   }
 }
+
+@media screen and (max-width: 750px){
+
+
+  .searhWrapper{
+
+    height: 280px;
+    margin: 1.5rem auto;
+  }
+
+  .search{
+
+    padding: 1.5rem 1rem;
+  }
+
+  .search>h2{
+
+    margin-bottom: 1rem;
+  }
+
+  .movie{
+
+    padding: 1rem;
+  }
+
+  label, input{
+
+    font-size: 0.7rem;
+  }
+
+  .search>input{
+
+    margin-bottom: 0;
+  }
+
+  button{
+
+    font-size: 0.7rem;
+    width: 4rem;
+    height: 30px;
+  }
+
+  h2, .movie>h2{
+
+    font-size: 1rem;
+  }
+
+  p{
+
+    font-size: 0.7rem;
+    margin-top: 0;
+  }
+}
